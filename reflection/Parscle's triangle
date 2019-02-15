@@ -1,0 +1,14 @@
+1] Parscle's triangle, we can never ignore hearing about binomial co-efficient associated with it, obviously the co-efficients of binomial formula form the parscle's triangle.
+
+2] This can be generated in 3 ways
+i) Casual brute force technique
+ii) Recursive method
+iii) Dynamic programming
+
+3] c(n,0) = 1
+   c(n,n) = 1
+   c(n,k) = c(n-1,k-1)+c(n-1,k)
+But the most important thing that anybody is interested in are time consumed and the memory.
+Time consumed- is almost same for all the technique.
+Coming upto memory- in (i) 2 for loops with 1 condition taking up (n*k) space
+in (ii) as the stack is filled for every iterration ((2^n-1)*data_size) is used but the best one is (iii), it is a flattened version of (i) where 2D array is reduced 1D as only the finally result is what matters so intermediate results are not stored thus redusing the memory to k.  
